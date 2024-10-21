@@ -1,5 +1,5 @@
 import AnimatedText from "@/components/AnimatedText";
-import { LinkArrow } from "@/components/Icons";
+import { DownloadIcon, EmailIcon } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
@@ -58,17 +58,17 @@ export default function Home() {
              `}
                   download
                 >
-                  Resume <LinkArrow className="ml-1 !w-6 md:!w-4" />
+                  Resume <DownloadIcon className="ml-1 !w-6 md:!w-4" />
                 </Link>
 
-                <a
+                <Link
                   target="_blank"
                   href={urls.mailto}
-                  className="ml-4 text-lg font-medium capitalize text-dark underline 
-                  dark:text-light md:text-base"
+                  className="flex items-center ml-4 text-lg font-medium capitalize text-dark p-2.5 px-6 text-lg
+                  dark:text-light md:p-2 md:px-4 md:text-base"
                 >
-                  Contact
-                </a>
+                  Contact <EmailIcon className="ml-1 !w-7 md:!w-4" />
+                </Link>
               </div>
             </div>
           </div>
