@@ -28,7 +28,7 @@ export default function Home() {
         className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
       >
         <Layout className="!pt-0 md:!pt-16 sm:!pt-16">
-          <div className="flex w-full items-start justify-between md:flex-col">
+          <div className="flex w-full items-start justify-around md:flex-col">
             <div className="w-1/2 lg:hidden md:inline-block md:w-full">
               <Image
                 src={homeGif}
@@ -38,7 +38,7 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
+            <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center md:!pt-16">
               <AnimatedText
                 text={texts.homeScreen.title}
                 className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
