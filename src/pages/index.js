@@ -16,11 +16,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home Page</title>
+        <title>Stathis Iakovidis Portfolio</title>
         <meta
           name="description"
-          content="Personal Portfolio"
+          content="modern personal portfolio built with Next.js. Showcasing my projects, skills, and experiences with a responsive design for optimal viewing on all devices. Explore my journey and get in touch!"
         />
+       <meta name="author" content="Stathis Iakovids"/>
       </Head>
 
       <TransitionEffect />
