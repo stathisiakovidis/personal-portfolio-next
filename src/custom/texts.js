@@ -22,7 +22,7 @@ export default {
             company: "Studyportals B.V.",
             companyAddress: "Eindhoven, Netherlands",
             companyLink: "https://studyportals.com/",
-            time: "Nov 2024 - Present",
+            time: "Oct 2024 - Present",
         },
     },
 
