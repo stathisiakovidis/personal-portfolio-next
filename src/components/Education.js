@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import AboutIcon from "./LiIcon";
-import texts from "@/custom/texts";
+import { TEXTS } from "@/custom/constants";
 
 const Details = ({ type, time, place, info }) => {
   const ref = useRef(null);
@@ -46,17 +46,17 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-2">
           <Details
-            type={texts.education.bachelors.title}
-            time={texts.education.bachelors.time}
-            place={texts.education.bachelors.place}
-            info={texts.education.bachelors.field}
+            type={TEXTS.education.bachelors.title}
+            time={TEXTS.education.bachelors.time}
+            place={TEXTS.education.bachelors.place}
+            info={TEXTS.education.bachelors.field}
           />
 
           <Details
-            type={texts.education.courses.title}
-            time={texts.education.courses.time}
-            place={texts.education.courses.place}
-            info={texts.education.courses.description}
+            type={TEXTS.education.courses.title}
+            time={TEXTS.education.courses.time}
+            place={TEXTS.education.courses.place}
+            info={TEXTS.education.courses.description}
           />
         </ul>
       </div>

@@ -4,7 +4,7 @@ import {
   useScroll,
 } from "framer-motion";
 import LiIcon from "./LiIcon";
-import texts from "@/custom/texts";
+import { TEXTS } from "@/custom/constants";
 
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
@@ -63,30 +63,30 @@ const Experience = () => {
           />
           <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
             <Details
-              position={texts.experience.exp2.title}
-              company={texts.experience.exp2.company}
-              companyLink={texts.experience.exp2.companyLink}
-              time={texts.experience.exp2.time}
-              address={texts.experience.exp2.companyAddress}
-              work={texts.experience.exp2.description}
+              position={TEXTS.experience.exp2.title}
+              company={TEXTS.experience.exp2.company}
+              companyLink={TEXTS.experience.exp2.companyLink}
+              time={TEXTS.experience.exp2.time}
+              address={TEXTS.experience.exp2.companyAddress}
+              work={TEXTS.experience.exp2.description}
             />
 
             <Details
-              position={texts.experience.exp1.title}
-              company={texts.experience.exp1.company}
-              companyLink={texts.experience.exp1.companyLink}
-              time={texts.experience.exp1.time}
-              address={texts.experience.exp1.companyAddress}
-              work={texts.experience.exp1.description}
+              position={TEXTS.experience.exp1.title}
+              company={TEXTS.experience.exp1.company}
+              companyLink={TEXTS.experience.exp1.companyLink}
+              time={TEXTS.experience.exp1.time}
+              address={TEXTS.experience.exp1.companyAddress}
+              work={TEXTS.experience.exp1.description}
             />
 
             <Details
-              position={texts.experience.intern.title}
-              company={texts.experience.intern.company}
-              companyLink={texts.experience.intern.companyLink}
-              time={texts.experience.intern.time}
-              address={texts.experience.intern.companyAddress}
-              work={texts.experience.intern.description}
+              position={TEXTS.experience.intern.title}
+              company={TEXTS.experience.intern.company}
+              companyLink={TEXTS.experience.intern.companyLink}
+              time={TEXTS.experience.intern.time}
+              address={TEXTS.experience.intern.companyAddress}
+              work={TEXTS.experience.intern.description}
             />
           </ul>
         </div>

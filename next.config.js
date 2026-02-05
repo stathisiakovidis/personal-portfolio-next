@@ -5,8 +5,15 @@ const nextConfig = {
   output: "export",
   distDir: "dist",
   images: {
-    unoptimized: true
-  }
-}
+    unoptimized: true,
+  },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
+  experimental: {
+    optimizeCss: true,
+  },
+  poweredByHeader: false,
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

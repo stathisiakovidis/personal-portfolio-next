@@ -9,6 +9,7 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
+import { SEO_META, PROFESSIONAL_DESCRIPTIONS } from "@/custom/constants";
 
 function AnimatedNumberFramerMotion({ value }) {
   const ref = useRef(null);
@@ -38,8 +39,15 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About Page</title>
-        <meta name="description" content="About Page" />
+        <title>{SEO_META.aboutPage.title}</title>
+        <meta
+          name="description"
+          content={SEO_META.aboutPage.description}
+        />
+        <meta property="og:title" content={SEO_META.aboutPage.ogTitle} />
+        <meta property="og:description" content={SEO_META.aboutPage.ogDescription} />
+        <meta name="twitter:title" content={SEO_META.aboutPage.twitterTitle} />
+        <meta name="twitter:description" content={SEO_META.aboutPage.twitterDescription} />
       </Head>
       <TransitionEffect />
       <main
@@ -58,22 +66,13 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium ">
-                Hi, I&apos;m <strong>Stathis Iakovidis</strong>, a Full Stack Developer
-                with a passion for creating beautiful,
-                functional, and user-centered digital experiences. With 3 years
-                of experience in the field.
+                {PROFESSIONAL_DESCRIPTIONS.aboutDescription[0]}
               </p>
               <p className="my-4 font-medium">
-                I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating
-                intuitive, enjoyable experiences for users.
+                {PROFESSIONAL_DESCRIPTIONS.aboutDescription[1]}
               </p>
               <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or other
-                digital product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                {PROFESSIONAL_DESCRIPTIONS.aboutDescription[2]}
               </p>
             </div>
             <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark 
