@@ -14,6 +14,9 @@ module.exports = {
         light: "#f5f5f5",
         primary: "#A020F0", // 240,86,199 #F056C7
         primaryDark: "#58E6D9", // 80,230,217
+        // Accessible muted colors for better contrast (WCAG AA compliant)
+        "dark-muted": "#525252", // 7:1 contrast on #f5f5f5
+        "light-muted": "#a3a3a3", // 4.6:1 contrast on #1b1b1b
       },
       animation: {
         "spin-slow": "spin 8s linear infinite",
